@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
-</head>
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
-<body>
-  <div id="home-page">
-    <div>
-      <img src="/public/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
+  <body>
+    <div id="home-page" class="grid-flow">
+      <div class="order-summary">
+        <div class="order-summary__img">
+          <img src="#" alt="The place for the picutre" />
+        </div>
+        <div class="information-area">
+          <h1 class="order-summary__title">Order Summary</h1>
+          <p class="order-summary__subtitle">You're close! Confirm your purchase and complete your order in the next step</p>
+          <div class="order-summary__pricing">
+            <svg></svg>
+            <svg></svg>
+            <div class="selected-plan">
+              <h2 class="selected-plan__title">Annual Plan</h2>
+              <p class="selected-plan__subtitle">$58.99 / Year</p>
+            </div>
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <button class="button">Proceed to Payment</button>
+        <a href="#">Cancel Order</a>
+      </div>
+      <div class="modal">
+        <svg
+          id="loading-bar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="22"
+          viewBox="0 0 36 22"
+        >
+          <g>
+            <rect id="loading-bar-left" width="8" height="22" />
+            <rect id="loading-bar-middle" width="8" height="22" x="14" />
+            <rect id="loading-bar-right" width="8" height="22" x="28" />
+          </g>
+        </svg>
       </div>
     </div>
-  </div>
 
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
-</body>
-
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
 </html>
