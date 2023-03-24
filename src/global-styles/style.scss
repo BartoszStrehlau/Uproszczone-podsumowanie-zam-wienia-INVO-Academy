@@ -1,9 +1,6 @@
 /// Main Styles File
 /// Here we import all the global Styles files we need for our project.
-
 @import "styles/normalize.scss";
 @import "styles/root.scss";
 @import "styles/fonts.scss";
-@import "styles/_global.scss";
-@import "styles/_loading-bar.scss";
-@import "styles/_grid-flow.scss";
+@import "styles/global.scss";

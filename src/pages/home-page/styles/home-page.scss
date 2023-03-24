@@ -1,8 +1,18 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+@use "../../../global-styles/style.scss";
+
+@import "modules/_grid-flow.scss";
+@import "modules/_flex-flow.scss";
+@import "modules/_loading-bar.scss";
+@import "modules/_order-summary.scss";
+@import "modules/_modal.scss";
 
 
 #home-page {
+    // position: relative;
     width: 100%;
     height: 100vh;
+    margin-inline: auto;
+    max-width: 460px;
 }

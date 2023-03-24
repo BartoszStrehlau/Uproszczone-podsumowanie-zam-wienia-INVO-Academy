@@ -1,0 +1,19 @@
+.order-summary {
+    margin-inline: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+
+    & &__img {
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+    }
+
+    & &__pricing {
+        // background-color: firebrick;
+
+        &>* {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}
